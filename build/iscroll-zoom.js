@@ -1146,6 +1146,8 @@ IScroll.prototype = {
 	},
 
 	_zoomStart: function (e) {
+		console.log(e)
+		console.log(this)
 		var c1 = Math.abs( e.touches[0].pageX - e.touches[1].pageX ),
 			c2 = Math.abs( e.touches[0].pageY - e.touches[1].pageY );
 
